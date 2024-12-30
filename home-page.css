@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-   
-}
-.head-name{
-  font-size: 22px;
-  color: black;
-  font-weight: bold;
-  padding: 17px 80px;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.head-name {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    padding: 17px 80px;
 }
 
 .navbar {
@@ -23,28 +24,189 @@ body {
 }
 
 .collapse {
-   margin-left: 80px;
+    margin-left: 80px;
 }
-.nav-item{
-   padding : 0 20px;
+
+.nav-item {
+    padding: 0 20px;
 }
-.navbar .navbar-nav .nav-link  {
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+
+.navbar .navbar-nav .nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: blue; 
+    color: orangered; 
     transform: scale(1.1);
 }
 
-.btn-reg{
-   border: 3px solid grey;
-   padding: 0 20px;
-   text-align: center;
-   justify-content: center;
-   align-content: center;
+.btn-reg {
+    border: 2px solid rgb(107, 107, 107);
+    padding: 0 20px;
+    text-align: left;
+    justify-content: left;
+    align-content: left;
 }
-#log{
-   border-radius:5px;
-   margin-left: 20px;
+
+#log, #reg, #cart {
+    border-radius: 6px;
+    margin-left: 20px;
+    height: 50px;
+}
+
+.banner-image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#home {
+    background-image: url(images/main.png.jpg);
+    width: 100%;
+    height: 83vh;
+    background-size: cover;
+    display: flex;
+    padding: 0 50px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: whitesmoke;
+}
+
+#text-meg {
+    font-size: 80px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#contain-msg {
+    font-size: 25px;
+}
+
+#product {
+    font-size: 50px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+    border-top: 3px solid black;
+}
+
+.generates {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid rgb(81, 80, 80);
+    padding: 0 20px;
+    text-align: left;
+    justify-content: left;
+    align-content: left;
+}
+
+#all, #men, #women, #jewl, #elect {
+    border-radius: 6px;
+    margin-left: 20px;
+    height: 50px;
+    transition: all 1.0s ease;
+    transform: all 2.3s ease;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgba(255, 166, 0, 0.614);
+    transform: scale(1.0);
+}
+
+/* API integration styles */
+.cardsData {
+    width: 400px;
+    height: 700px;
+    border: 2px solid rgba(128, 128, 128, 0.504);
+    border-radius: 10px;
+    padding:20px 0;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 10px;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+}
+.cardsData:hover{
+    background-color:rgba(255, 255, 255, 0.779);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.508);;
+}
+
+#title {
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: -webkit-box;
+    text-overflow:inherit;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+}
+
+#img {
+    width: 80%;
+    height: 50%;
+    object-fit: contain;
+    transition: all 1.3s ease;
+}
+#img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+ #description {
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+}
+ #price {
+    font-size: 25px;
+}
+#two-btn{
+    border: none;
+    padding: 0px 20px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+    justify-content:center;
+    border-radius: 6px;
+    margin-left: 0px;
+    height: 50px;
+    margin-top:10px;
+}
+#two-btn:hover{
+    background-color: grey;
+    color: black;
+}
+
+/* footer */
+.made-gif{
+   text-align: center;
+   padding: 50px;
+}
+#made{
+    font-size: 25px;
+}
+#gif{
+    color: brown;
 }
