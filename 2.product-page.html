@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../E-Commerce/home-page.css">
+    <link rel="stylesheet" href="../E-Commerce/2.product-page.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary text-green-150 bg-light py-3 fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary text-green-150 bg-light py-3  ">
       <div class="container-fluid">
           <h1 class="head-name">Ecommerce</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
@@ -22,13 +22,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Home</a>
+                      <a class="nav-link" href="1.home-page.html">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
+                      <a class="nav-link" href="../E-Commerce/2.product-page.html" style="color: orange;">Product</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#">About</a>
@@ -45,13 +42,6 @@
       </div>
    </div>
   </nav>
-<!-- banner section -->
-<section id="home">
-    <div class="container">
-      <p id="text-meg">New Season Arrivals</p>
-      <p id="contain-msg">This is a wider card with supporting text below as a natural lead-in to to additional content.This content is a little bit longer </p>
-    </div>
-</section>
 
 <!-- latest product -->
  <div>
@@ -61,19 +51,20 @@
 
 <!-- button for latest product -->
 <section class="generates">
-<button class="btn" id="all" onclick="generateNames()">ALL</button>
-<button class="btn" id="men" onclick="generateAges()">MEN'S CLOTHING</button>  
-<button class="btn" id="women" onclick="generateImages()">WOMENS'S CLOTHING</button> 
-<button class="btn" id="jewl" onclick="generateAll()">JEWELERY</button>  
-<button class="btn" id="elect" onclick="generateAll()">ELECTRONICS</button> 
+    <button class="btn" id="all" onclick="filterData('all', this)">All</button>
+    <button class="btn" id="men" onclick="filterData('men\'s clothing', this)">Men's clothing</button>  
+    <button class="btn" id="women" onclick="filterData('women\'s clothing', this)">Women's clothing</button> 
+    <button class="btn" id="jewl" onclick="filterData('jewelery', this)">Jewelery</button>  
+    <button class="btn" id="elect" onclick="filterData('electronics', this)">Electronics</button> 
 </section>
 <div id="cards"></div>
+
 
 <!-- footer -->
  <div class="made-gif">
 <span id="made">Made with 😉</span><img id="gif"src="../E-Commerce/images/signature-24063C8AA3D52FCA9C9A4E59AD81291F2.gif" alt="Computer man" >
 </div>
-<script src="home-page.js"></script>
+<script src="2.product-page.js"></script>
 
 </body>
 </html>
